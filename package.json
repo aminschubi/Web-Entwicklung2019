@@ -26,6 +26,7 @@
 		"express": "^4.17.0",
 		"less": "^3.9.0",
 		"less-plugin-clean-css": "^1.5.1",
-		"uglify-js": "^3.5.15"
+		"uglify-js": "^3.5.15",
+		"uglify-js-es6": "^2.8.9"
 	}
 }
