@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle webdev-pv@1.0.0~prestart: webdev-pv@1.0.0
+6 silly lifecycle webdev-pv@1.0.0~prestart: no script for prestart, continuing
+7 info lifecycle webdev-pv@1.0.0~start: webdev-pv@1.0.0
+8 verbose lifecycle webdev-pv@1.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle webdev-pv@1.0.0~start: PATH: D:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\Amin\Desktop\Web-Entwicklung SS19\Abgabe\Abgabe\node_modules\.bin;D:\Program Files\AdoptOpenJDK\jdk-8.0.212.03-hotspot\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\python27;D:\MinGW\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\Amin\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Git\bin;C:\cocos2d-x-3.10\templates;C:\cocos2d-x-3.10\tools\cocos2d-console\bin;C:\apache-ant-1.9.7\bin;D:\apache-maven-3.5.0-bin\apache-maven-3.5.0\bin;D:\ffmpeg\bin;D:\Program Files\nodejs\;C:\Program Files\devd-0.7-windows64;D:\Program Files\Microsoft VS Code\bin;C:\cocos2d-x-3.10\templates;C:\cocos2d-x-3.10\tools\cocos2d-console\bin;C:\apache-ant-1.9.7\bin;D:\Program Files\Git\bin;C:\Users\Amin\AppData\Roaming\npm;C:\Users\Amin\AppData\Local\GitHubDesktop\bin;D:\Program Files\Heroku\bin;D:\Program Files\Microsoft VS Code\bin;D:\MiKTeX 2.9\miktex\bin\x64\
+10 verbose lifecycle webdev-pv@1.0.0~start: CWD: C:\Users\Amin\Desktop\Web-Entwicklung SS19\Abgabe\Abgabe
+11 silly lifecycle webdev-pv@1.0.0~start: Args: [ '/d /s /c', 'node ./dist/server.js "--PORT=8080"' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1020:11)
+12 verbose stack     at process.kill (internal/process.js:190:13)
+12 verbose stack     at process.listener (D:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (D:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+13 verbose cwd C:\Users\Amin\Desktop\Web-Entwicklung SS19\Abgabe\Abgabe
+14 error Windows_NT 6.1.7601
+15 error argv "D:\\Program Files\\nodejs\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+16 error node v6.11.2
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
