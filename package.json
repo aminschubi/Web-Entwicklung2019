@@ -11,7 +11,7 @@
 		"build": "npm run clean && npm run build:copyFiles && npm run build:bundleUglify && npm run build:styleMini",
 		"build:styleMini": "lessc --clean-css ./lib/styles/style.less ./dist/style.css ",
 		"build:bundleUglify": "uglifyjs ./lib/bundle.js -o ./dist/bundle.js && uglifyjs ./lib/src/server/server.js -o ./dist/server.js",
-		"build:copyFiles": "copyfiles -f ./lib/index.html ./lib/src/client/m.json dist",
+		"build:copyFiles": "copyfiles -f ./lib/index.html ./lib/src/client/m.json ./lib/src/client/plans.json dist",
 		"debug": "npm run clean && npm run debug:copyFiles && npm run debug:style",
 		"debug:style": "lessc ./lib/styles/style.less ./dist/style.css",
 		"debug:copyFiles": "copyfiles -f ./lib/index.html ./lib/bundle.js ./lib/src/server/server.js ./lib/src/client/m.json dist",
@@ -28,5 +28,9 @@
 		"less-plugin-clean-css": "^1.5.1",
 		"uglify-js": "^3.5.15",
 		"uglify-js-es6": "^2.8.9"
+	},
+	"browser": {
+		"fs": false
 	}
+
 }
