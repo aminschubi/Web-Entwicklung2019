@@ -20,20 +20,26 @@ select {
 
 button {
 	font-family: 'fira_coderetina';
-
 	color: black;
-
 	background-color: rgb(236, 234, 234);
 	font-size: 20px;
-	border-radius: 6px;
+	border-radius: 17px;
 	position: relative;
+	box-shadow: 5px 7px;
+	border: 4px solid rgb(0, 0, 0);
 
 
 }
 
+button:active {
+	transform: translateY(2px);
+}
+
 button:hover {
 	background-color: #008CBA;
-	color: white;
+
+	box-shadow: 5px 7px;
+	border: 4px solid rgb(0, 0, 0);
 }
 
 button.name {
@@ -66,17 +72,25 @@ button.addPlan {
 	margin: 0;
 	position: relative;
 
-	left: 40%;
+	left: 32.5%;
 	margin-top: 5%;
 
 
 }
 
-#listView {
+button.flipPos {
+	left: 55%;
+}
+
+button.flipNeg {
+	left: 10%;
+}
+
+#list {
 	float: left;
-	border: 5px;
+	border: 3px;
 	border-style: dashed;
-	width: 40vw;
+	width: 48%;
 	height: 95vh;
 	background-color: rgb(255, 243, 134);
 
@@ -84,10 +98,11 @@ button.addPlan {
 
 #preview {
 	float: right;
-	border: 5px;
+	border: 3px;
 	border-style: dashed;
-	width: 53vw;
+	width: 50%;
 	height: 95vh;
+	background-color: rgb(255, 243, 134);
 }
 
 #planpreview {
@@ -99,6 +114,16 @@ button.addPlan {
 	float: bottom;
 	border: 5px;
 	border-style: solid;
+}
+
+.semesterListElement {
+	width: 100%;
+	height: 100/6%;
+}
+
+.previewButton {
+	width: 100/6%;
+	height: 100%;
 }
 
 #controller {
