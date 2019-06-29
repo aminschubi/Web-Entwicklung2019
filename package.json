@@ -6,8 +6,8 @@
 	"scripts": {
 		"clean": "rimraf dist/*",
 		"lint": "eslint --debug ./lib/src/server/*.js && eslint ./lib/src/client/*.js",
-		"prebuild": "npm run lint && browserify -t brfs lib/src/client/client.js -o lib/bundle.js",
-		"predebug": "npm run lint && browserify -t brfs lib/src/client/client.js  -o lib/bundle.js",
+		"prebuild": "npm run lint && browserify -t brfs lib/src/client/main.js -o lib/bundle.js",
+		"predebug": "npm run lint && browserify -t brfs lib/src/client/main.js -o lib/bundle.js",
 		"build": "npm run clean && npm run build:copyFiles && npm run build:bundleUglify && npm run build:styleMini",
 		"build:styleMini": "lessc --clean-css ./lib/styles/style.less ./dist/style.css ",
 		"build:bundleUglify": "uglifyjs ./lib/bundle.js -o ./dist/bundle.js && uglifyjs ./lib/src/server/server.js -o ./dist/server.js",
@@ -20,9 +20,10 @@
 	"author": "Amin Schubhan und Tareq Alsamawi",
 	"license": "ISC",
 	"devDependencies": {
-		"eslint": "^5.16.0",
 		"browserify": "^16.2.3",
+		"browserify-directory": "^1.0.2",
 		"browserify-fs": "^1.0.0",
+		"eslint": "^5.16.0",
 		"less": "^3.9.0",
 		"less-plugin-clean-css": "^1.5.1",
 		"uglify-js": "^3.5.15",
