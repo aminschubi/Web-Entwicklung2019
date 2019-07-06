@@ -4,8 +4,17 @@
 		url('../fonts/firacode-retina-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: 'lumberjack';
+	src: url('../fonts/lumberjack.regular-webfont.woff2') format('woff2'),
+		url('../fonts/lumberjack.regular-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
 
 }
+
 
 #semesterController {
 	font-size: 20;
@@ -19,10 +28,11 @@ select {
 }
 
 button {
+	vertical-align: top;
 	font-family: 'fira_coderetina';
 	color: black;
 	background-color: rgb(236, 234, 234);
-	font-size: 20px;
+	font-size: 22px;
 	border-radius: 17px;
 	position: relative;
 	box-shadow: 5px 7px;
@@ -42,8 +52,6 @@ button {
 	display: inline-block;
 	cursor: pointer;
 	color: #000000;
-
-	font-size: 17px;
 	padding: 16px 31px;
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #ffffff;
@@ -79,17 +87,23 @@ button.name {
 	height: 100%;
 	width: 46%;
 	margin-left: 2%;
+	text-align: center;
+	padding: 0px;
 }
 
 button.editB {
 	height: 100%;
 	width: 23%;
 	margin-left: 2%;
+	text-align: center;
+	padding: 0px;
 }
 
 button.deleteB {
 	height: 100%;
 	width: 23%;
+	text-align: center;
+	padding: 0px;
 }
 
 button.nameM {
@@ -126,16 +140,22 @@ button.lockMB {
 	margin-top: 1.5%;
 }
 
+.listElementM {
+	margin-top: 1.5%;
+}
+
 button.addPlan {
 	font-size: 35px;
 	width: 20%;
 	border-radius: 6px;
-	height: 100%;
+	height: 120%;
 
 	margin: 0;
 	position: relative;
 
 	left: 40%;
+	text-align: center;
+	padding: 0px;
 }
 
 .previewButton:hover {
@@ -191,11 +211,13 @@ button.addPlan {
 
 .semesterListElement {
 	width: 100%;
-	height: 100/6%;
+	height: 100/7%;
 }
 
 .previewButton {
-	width: 100/7%;
+	text-align: center;
+	padding: 0px;
+
 	height: 100%;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #fff200));
 	background: -moz-linear-gradient(top, #ffffff 5%, #fff200 100%);
@@ -221,6 +243,8 @@ button.addPlan {
 }
 
 .previewIndex {
+	text-align: center;
+	padding: 0px;
 	width: 100/7%;
 	height: 100%;
 	background-color: #ffffff;
@@ -233,7 +257,6 @@ button.addPlan {
 	color: #000000;
 
 	font-size: 17px;
-	padding: 16px 31px;
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #ffffff;
 	box-shadow: 0px 0px #000000;
@@ -273,7 +296,7 @@ button.addPlan {
 	cursor: pointer;
 	color: #000000;
 
-	font-size: 55px;
+	font-size: 60px;
 	padding: 16px 31px;
 	text-decoration: none;
 }
@@ -289,6 +312,7 @@ button.addPlan {
 }
 
 button.flipPos {
+	font-size: 18px;
 	left: 58%;
 	border-radius: 5px;
 	box-shadow: 0px 0px #000000;
@@ -296,6 +320,7 @@ button.flipPos {
 }
 
 button.pageCounter {
+	font-size: 18px;
 	left: 34%;
 	border-radius: 5px;
 	box-shadow: 0px 0px #000000;
@@ -303,6 +328,7 @@ button.pageCounter {
 }
 
 button.flipNeg {
+	font-size: 18px;
 	left: 8%;
 	border-radius: 5px;
 	box-shadow: 0px 0px #000000;
