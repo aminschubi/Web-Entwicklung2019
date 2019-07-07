@@ -32,7 +32,9 @@
 	"dependencies": {
 		"brfs": "^2.0.2",
 		"copyfiles": "^2.1.0",
+		"dom-to-image": "^2.6.0",
 		"express": "^4.17.0",
+		"file-saver": "^2.0.2",
 		"https": "^1.0.0",
 		"request": "^2.81.0"
 	}
